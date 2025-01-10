@@ -1,5 +1,6 @@
 package com.example.testapp.di
 
+import com.example.testapp.data.local.CardDao
 import com.example.testapp.data.remote.ApiService
 import com.example.testapp.data.repositoryImpl.HomeRepositoryImpl
 import com.example.testapp.domain.repository.HomeRepository
@@ -37,8 +38,9 @@ class NetworkModule {
 object RepositoryModule {
     @Provides
     fun provideHomeRepository(
-        apiService: ApiService // Example dependency
+        apiService: ApiService, // Example dependency
+        cardDao: CardDao // Example dependency
     ): HomeRepository {
-        return HomeRepositoryImpl(apiService)
+        return HomeRepositoryImpl(apiService, cardDao)
     }
 }

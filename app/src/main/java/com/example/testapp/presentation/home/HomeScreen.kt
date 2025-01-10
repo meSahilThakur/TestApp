@@ -16,10 +16,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.testapp.presentation.components.HomeCard
 import androidx.compose.runtime.getValue
 import androidx.compose.foundation.lazy.items
+import androidx.compose.runtime.LaunchedEffect
 
 @Composable
 fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
     val homeState by viewModel.homeState.collectAsState()
+    LaunchedEffect(key1 = Unit) {
+        viewModel.fetchHomeData()
+    }
 
     when {
         homeState.isLoading -> {

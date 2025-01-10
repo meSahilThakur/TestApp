@@ -20,11 +20,12 @@ class HomeViewModel @Inject constructor(
     private val _homeData = MutableStateFlow(GetHomeState())
     val homeState = _homeData.asStateFlow()
 
-    init {
-        fetchHomeData()
-    }
+//    init {
+//        fetchHomeData()
+//    }
 
     fun fetchHomeData() {
+
         viewModelScope.launch{
             getHomeDataUseCase.invoke().collectLatest {
                 when(it){
