@@ -12,15 +12,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.testapp.data.model.Card
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.graphics.Color
 
 @Composable
-fun TitleDescriptionCard(card: Card) {
+fun TitleDescriptionCard(card: Card, modifier: Modifier) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp),
-//        elevation = 4.dp
+        elevation = CardDefaults.cardElevation()
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(

@@ -3,8 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
-    kotlin("plugin.serialization") version "2.0.20"
-//    id ("kotlin-kapt")
+    kotlin("plugin.serialization") version "2.1.0"
+    //    id ("kotlin-kapt")
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
 
@@ -95,7 +95,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.8.5")
 
     //serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
 
 
     val room_version = "2.6.1"

@@ -10,6 +10,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.testapp.data.model.Card
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 
 
 @Composable
@@ -19,7 +20,7 @@ fun TextCard(card: Card) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp),
-//        elevation = 4.dp
+        elevation = CardDefaults.cardElevation()
     ) {
         Text(
             text = card.card.value ?: "",
