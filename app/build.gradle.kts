@@ -61,6 +61,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.cardview)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -107,6 +112,15 @@ dependencies {
     implementation("androidx.room:room-ktx:$room_version")
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:$room_version")
+
+
+
+
+    implementation ("androidx.appcompat:appcompat:1.7.0") // Required for AppCompatActivity
+    implementation ("androidx.activity:activity-ktx:1.10.0") // Required for Activity support
+    implementation ("androidx.fragment:fragment-ktx:1.8.5") // Required for fragments
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.8.6")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.8.6")
 
 }
 

@@ -1,10 +1,6 @@
 package com.example.testapp.presentation.navigation
 
-import com.example.testapp.data.model.Attributes
 import com.example.testapp.data.model.CardDetails
-import com.example.testapp.data.model.Description
-import com.example.testapp.data.model.Image
-import com.example.testapp.data.model.Title
 import kotlinx.serialization.Serializable
 
 

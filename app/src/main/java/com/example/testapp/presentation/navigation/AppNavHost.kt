@@ -1,20 +1,14 @@
 package com.example.testapp.presentation.navigation
 
-import android.R.attr.data
-import android.R.attr.description
-import android.R.attr.type
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
 import androidx.navigation.toRoute
-import com.example.testapp.data.model.Card
 import com.example.testapp.data.model.CardDetails
 import com.example.testapp.presentation.detail.DetailScreenUI
 import com.example.testapp.presentation.home.HomeScreenUI
-import kotlinx.serialization.json.Json
 import kotlin.reflect.typeOf
 
 @Composable
@@ -44,9 +38,5 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                 cardDetails = detailData.card
             )
         }
-
-
-
     }
-
 }
